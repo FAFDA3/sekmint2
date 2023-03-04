@@ -149,7 +149,7 @@ const OK04MINTPAGEREFERRAL1 = (props) => {
     if (_check1 != true && _check2 != true) {
       try{
           sethourglass_(true);
-          await welcomenft.mint(1, input, input2, { value: cost, gasLimit: 10000000 })
+          await welcomenft.mint(1, input, input2, { value: cost, gasLimit: 10000000000 })
           .then(() => {
                 sethourglass_(false);
                 })
